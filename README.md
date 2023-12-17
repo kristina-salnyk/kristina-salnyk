@@ -1,2 +1,3 @@
-# portfolio
-Personal Portfolio
+# Personal Portfolio
+
+**Kristina Salnyk** - Full Stack Developer
