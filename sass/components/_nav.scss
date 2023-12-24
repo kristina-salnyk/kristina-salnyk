@@ -1,0 +1,40 @@
+.nav {
+  @extend %flex-space-between;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link {
+  padding: 24px 32px;
+  display: inline-block;
+  color: getTextColor('primary');
+  transition: color 250ms $transition-timing-function;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 4px;
+    background: getGradientColor('primary');
+    border-radius: 4px;
+    transition: width 250ms ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    color: getAccentColor('primary');
+  }
+}

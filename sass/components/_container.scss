@@ -1,0 +1,16 @@
+.container {
+  @include setXPadding(15px);
+  @extend %x-margin-centered;
+
+  @include setForMobile {
+    max-width: getBreakpoint('mobile');
+  }
+
+  @include setForTablet {
+    width: getBreakpoint('tablet');
+  }
+
+  @include setForDesktop {
+    width: getBreakpoint('desktop');
+  }
+}

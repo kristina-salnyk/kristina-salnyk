@@ -1,0 +1,14 @@
+.about__tech-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 250ms $transition-timing-function;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

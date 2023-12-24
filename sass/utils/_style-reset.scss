@@ -1,0 +1,54 @@
+body {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  cursor: default;
+
+  color: getTextColor('primary');
+  background-color: getBgrColor('primary');
+}
+
+body.modal-open {
+  @include setForMobile {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

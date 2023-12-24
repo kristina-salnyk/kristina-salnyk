@@ -1,0 +1,95 @@
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$primary-font: 'Poppins', 'Geneva', 'Arial', sans-serif;
+
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'desktop': 1200px,
+);
+
+$text-colors: (
+  'primary': #fff,
+  'secondary': #8491a0,
+  'title': #212121,
+  'subtitle': #c5c5c5,
+  'white': #fff,
+  'black': #000,
+  'placeholder': rgba(117, 117, 117, 0.5),
+);
+
+$gradient-colors: (
+  'primary': linear-gradient(90deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 100%),
+  'secondary': linear-gradient(114.99deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 80%),
+  'orange': linear-gradient(180deg, rgba(255, 134, 96, 1) 0%, rgba(213, 73, 29, 1) 100%),
+  'blue': linear-gradient(180deg, rgba(91, 173, 255, 1) 0%, rgba(19, 115, 209, 1) 100%),
+);
+
+$bgr-colors: (
+  'primary': #161513,
+  'header': #222222,
+  'footer': #191919,
+  'card': #2a2a2a,
+  'label': rgba(47, 48, 58, 0.8),
+  'backdrop': rgba(0, 0, 0, 0.2),
+  'card-overlay': rgba(33, 150, 243, 0.9),
+);
+
+$icon-colors: (
+  'primary': #fff,
+  'secondary': rgba(255, 255, 255, 0.1),
+);
+
+$accent-colors: (
+  'primary': #8000ff,
+  'secondary': #ff8660,
+  'link': #fff,
+);
+
+$border-colors: (
+  'input': rgba(255, 255, 255, 0.3),
+);
+
+$shadow-colors: (
+  'alpha-04': rgba(0, 0, 0, 0.04),
+  'alpha-06': rgba(0, 0, 0, 0.06),
+  'alpha-08': rgba(0, 0, 0, 0.08),
+  'alpha-1': rgba(0, 0, 0, 0.1),
+  'alpha-12': rgba(0, 0, 0, 0.12),
+  'alpha-14': rgba(0, 0, 0, 0.14),
+  'alpha-15': rgba(0, 0, 0, 0.15),
+  'alpha-16': rgba(0, 0, 0, 0.16),
+  'alpha-2': rgba(0, 0, 0, 0.2),
+);
+
+@function getBreakpoint($key) {
+  @return map-get($breakpoints, $key);
+}
+
+@function getGradientColor($key) {
+  @return map-get($gradient-colors, $key);
+}
+
+@function getBgrColor($key) {
+  @return map-get($bgr-colors, $key);
+}
+
+@function getBorderColor($key) {
+  @return map-get($border-colors, $key);
+}
+
+@function getTextColor($key) {
+  @return map-get($text-colors, $key);
+}
+
+@function getIconColor($key) {
+  @return map-get($icon-colors, $key);
+}
+
+@function getAccentColor($key) {
+  @return map-get($accent-colors, $key);
+}
+
+@function getShadowColor($key) {
+  @return map-get($shadow-colors, $key);
+}
