@@ -21,8 +21,11 @@ $text-colors: (
 $gradient-colors: (
   'primary': linear-gradient(90deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 100%),
   'secondary': linear-gradient(114.99deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 80%),
+  'overlay': linear-gradient(90deg, rgba(255, 134, 96, 0.5) 0%, rgba(154, 51, 255, 0.5) 100%),
   'orange': linear-gradient(180deg, rgba(255, 134, 96, 1) 0%, rgba(213, 73, 29, 1) 100%),
   'blue': linear-gradient(180deg, rgba(91, 173, 255, 1) 0%, rgba(19, 115, 209, 1) 100%),
+  'green': linear-gradient(180deg, rgba(91, 255, 173, 1) 0%, rgba(19, 209, 115, 1) 100%),
+  'black': linear-gradient(90deg, rgba(1, 1, 1, 0.8) 0%, rgba(1, 1, 1, 0.8) 100%),
 );
 
 $bgr-colors: (
@@ -30,9 +33,10 @@ $bgr-colors: (
   'header': #222222,
   'footer': #191919,
   'card': #2a2a2a,
+  'button': #fff,
   'label': rgba(47, 48, 58, 0.8),
   'backdrop': rgba(0, 0, 0, 0.2),
-  'card-overlay': rgba(33, 150, 243, 0.9),
+  'card-overlay': rgba(26, 26, 26, 0.9),
 );
 
 $icon-colors: (
@@ -43,10 +47,10 @@ $icon-colors: (
 $accent-colors: (
   'primary': #8000ff,
   'secondary': #ff8660,
-  'link': #fff,
 );
 
 $border-colors: (
+  'primary': #fff,
   'input': rgba(255, 255, 255, 0.3),
 );
 

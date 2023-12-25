@@ -1,14 +1,17 @@
 .about__tech-item {
-  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.about__tech {
+  display: inline-flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 8px;
   transition: transform 250ms $transition-timing-function;
 
   &:hover {
     transform: scale(1.2);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 16px;
   }
 }
