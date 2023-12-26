@@ -309,7 +309,7 @@ svg {
   justify-content: space-between;
 }
 
-.section__text, .section, .container {
+.experience__list, .section__text, .section, .container {
   margin-left: auto;
   margin-right: auto;
 }
@@ -342,8 +342,8 @@ svg {
 }
 
 .section {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .section__title--orange {
@@ -352,6 +352,10 @@ svg {
 
 .section__title--blue {
   background: linear-gradient(180deg, rgb(91, 173, 255) 0%, rgb(19, 115, 209) 100%);
+}
+
+.section__title--pink {
+  background: linear-gradient(180deg, rgb(196, 86, 161) 0%, rgb(150, 12, 102) 100%);
 }
 
 .section__title {
@@ -384,7 +388,8 @@ svg {
 }
 
 .hero {
-  padding-top: 136px;
+  padding-top: 168px;
+  padding-bottom: 96px;
 }
 
 .hero__container {
@@ -584,19 +589,20 @@ svg {
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(4px);
-  background: linear-gradient(90deg, rgba(255, 134, 96, 0.5) 0%, rgba(154, 51, 255, 0.5) 100%), linear-gradient(90deg, rgba(1, 1, 1, 0.8) 0%, rgba(1, 1, 1, 0.8) 100%);
+  background: linear-gradient(90deg, rgba(255, 134, 96, 0.4) 0%, rgba(154, 51, 255, 0.4) 100%), linear-gradient(90deg, rgba(1, 1, 1, 0.6) 0%, rgba(1, 1, 1, 0.6) 100%);
   transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__description {
   padding: 16px;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -639,6 +645,29 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+.experience__list {
+  max-width: 800px;
+}
+
+.experience__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.position__heading {
+  display: flex;
+  gap: 16px;
+}
+
+.position__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.position__label {
+  margin-left: auto;
+  color: #8491a0;
 }
 
 /*# sourceMappingURL=main.css.map */

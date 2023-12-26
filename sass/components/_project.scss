@@ -20,19 +20,20 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(4px);
   background: getGradientColor('overlay'), getGradientColor('black');
   transform: translateY(100%);
+  transition: transform 250ms $transition-timing-function;
 }
 
 .project__description {
   padding: 16px;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 200;
   text-align: center;
 }
 

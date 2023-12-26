@@ -1,6 +1,6 @@
 .section {
   @extend %x-margin-centered;
-  @include setYPadding(64px);
+  @include setYPadding(56px);
 }
 
 .section__title--orange {
@@ -9,6 +9,10 @@
 
 .section__title--blue {
   background: getGradientColor('blue');
+}
+
+.section__title--pink {
+  background: getGradientColor('pink');
 }
 
 .section__title {

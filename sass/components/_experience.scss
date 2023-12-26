@@ -1,0 +1,23 @@
+.experience__list {
+  @extend %x-margin-centered;
+  max-width: 800px;
+}
+
+.experience__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.position__heading {
+  display: flex;
+  gap: 16px;
+}
+
+.position__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.position__label {
+  margin-left: auto;
+  color: getTextColor('secondary');
+}

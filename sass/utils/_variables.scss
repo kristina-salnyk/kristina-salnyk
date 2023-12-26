@@ -21,11 +21,11 @@ $text-colors: (
 $gradient-colors: (
   'primary': linear-gradient(90deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 100%),
   'secondary': linear-gradient(114.99deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 80%),
-  'overlay': linear-gradient(90deg, rgba(255, 134, 96, 0.5) 0%, rgba(154, 51, 255, 0.5) 100%),
+  'overlay': linear-gradient(90deg, rgba(255, 134, 96, 0.4) 0%, rgba(154, 51, 255, 0.4) 100%),
   'orange': linear-gradient(180deg, rgba(255, 134, 96, 1) 0%, rgba(213, 73, 29, 1) 100%),
   'blue': linear-gradient(180deg, rgba(91, 173, 255, 1) 0%, rgba(19, 115, 209, 1) 100%),
-  'green': linear-gradient(180deg, rgba(91, 255, 173, 1) 0%, rgba(19, 209, 115, 1) 100%),
-  'black': linear-gradient(90deg, rgba(1, 1, 1, 0.8) 0%, rgba(1, 1, 1, 0.8) 100%),
+  'pink': linear-gradient(180deg, rgb(196, 86, 161) 0%, rgb(150, 12, 102) 100%),
+  'black': linear-gradient(90deg, rgba(1, 1, 1, 0.6) 0%, rgba(1, 1, 1, 0.6) 100%),
 );
 
 $bgr-colors: (
