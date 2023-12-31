@@ -1,7 +1,6 @@
 .link {
   display: inline-block;
   font-size: 14px;
-  text-align: center;
   text-decoration: underline;
   color: getTextColor('primary');
   transition: color 250ms $transition-timing-function;

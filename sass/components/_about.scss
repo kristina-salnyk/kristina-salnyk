@@ -1,10 +1,10 @@
-.about__tech-item {
+.about__feature-item {
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
-.about__tech {
+.about__feature {
   display: inline-flex;
   align-items: center;
   flex-wrap: nowrap;

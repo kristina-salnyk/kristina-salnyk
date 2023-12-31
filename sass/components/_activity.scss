@@ -1,0 +1,33 @@
+.activity__heading {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.activity__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.activity__label {
+  margin-left: auto;
+  color: getTextColor('secondary');
+}
+
+.activity__description {
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 8px;
+  font-size: 16px;
+  color: getTextColor('secondary');
+}
+
+.activity__feature-list {
+  list-style-type: disc;
+  margin-left: 16px;
+}
+
+.activity__feature-item {
+  margin-bottom: 4px;
+}

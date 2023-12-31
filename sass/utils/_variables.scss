@@ -10,9 +10,8 @@ $breakpoints: (
 
 $text-colors: (
   'primary': #fff,
-  'secondary': #8491a0,
+  'secondary': #c5c5c5,
   'title': #212121,
-  'subtitle': #c5c5c5,
   'white': #fff,
   'black': #000,
   'placeholder': rgba(117, 117, 117, 0.5),
@@ -25,6 +24,7 @@ $gradient-colors: (
   'orange': linear-gradient(180deg, rgba(255, 134, 96, 1) 0%, rgba(213, 73, 29, 1) 100%),
   'blue': linear-gradient(180deg, rgba(91, 173, 255, 1) 0%, rgba(19, 115, 209, 1) 100%),
   'pink': linear-gradient(180deg, rgb(196, 86, 161) 0%, rgb(150, 12, 102) 100%),
+  'violet': linear-gradient(180deg, rgb(169, 94, 248) 0%, rgb(119, 19, 209) 100%),
   'black': linear-gradient(90deg, rgba(1, 1, 1, 0.6) 0%, rgba(1, 1, 1, 0.6) 100%),
 );
 
