@@ -1,0 +1,10 @@
+.carousel,
+.carousel__item-wrapper,
+.carousel__item,
+.carousel__image {
+  @extend %stretched;
+}
+
+.carousel__image {
+  object-fit: contain;
+}

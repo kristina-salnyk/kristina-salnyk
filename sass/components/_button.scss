@@ -13,6 +13,7 @@
 
   &:hover,
   &:focus {
+    text-decoration: none;
     color: getAccentColor('primary');
     border-color: getAccentColor('primary');
   }

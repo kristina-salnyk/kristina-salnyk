@@ -1,12 +1,16 @@
 .link {
+  padding: 0;
   display: inline-block;
   font-size: 14px;
   text-decoration: underline;
   color: getTextColor('primary');
+  background-color: transparent;
+  border: none;
   transition: color 250ms $transition-timing-function;
 
   &:hover,
   &:focus {
+    text-decoration: underline;
     color: getAccentColor('primary');
   }
 }

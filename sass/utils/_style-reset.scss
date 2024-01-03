@@ -5,18 +5,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.03em;
   cursor: default;
-
   color: getTextColor('primary');
   background-color: getBgrColor('primary');
 }
 
-body.modal-open {
+body.preview-opened {
   @include setForMobile {
     position: relative;
-
     height: 100%;
     width: 100%;
-
     overflow: hidden;
   }
 }
@@ -27,6 +24,11 @@ ul {
 
 a {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 address {

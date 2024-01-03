@@ -58,7 +58,7 @@
 
 .section__gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
+  grid-template-columns: repeat(auto-fit, 320px);
   justify-content: space-around;
   gap: 32px;
 }
