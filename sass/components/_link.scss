@@ -12,5 +12,6 @@
   &:focus {
     text-decoration: underline;
     color: getAccentColor('primary');
+    cursor: pointer;
   }
 }

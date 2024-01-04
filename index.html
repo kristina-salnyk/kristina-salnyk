@@ -52,9 +52,6 @@
           </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#home">Home</a>
-            </li>
-            <li class="nav__item">
               <a class="nav__link" href="#about">About</a>
             </li>
             <li class="nav__item">
@@ -79,7 +76,7 @@
                 <a class="button button--primary" href="#contact">Get In Touch</a>
               </li>
               <li>
-                <a class="button" href="assets/Kristina-Salnyk-Fullstack-Developer.pdf" download>
+                <a class="button" href="assets/Kristina-Salnyk-Full-Stack-Developer.pdf" download>
                   Download CV
                 </a>
               </li>
@@ -884,8 +881,8 @@
             <li class="section__list-item">
               <div class="activity">
                 <div class="activity__heading">
-                  <img src="./icons/epam.svg" alt="EPAM company logo" width="30" />
-                  <h3 class="activity__title">Front End Developer at EPAM</h3>
+                  <img src="./icons/epam.svg" alt="EPAM Systems logo" width="30" />
+                  <h3 class="activity__title">Front End Developer at EPAM Systems</h3>
                   <span class="activity__label">
                     <time datetime="2023-07-01">Jul, 2023</time> -
                     <time datetime="2023-12-01">Dec, 2023</time>
@@ -1062,7 +1059,7 @@
             <li class="section__list-item">
               <div class="activity">
                 <div class="activity__heading">
-                  <img src="./icons/epam.svg" alt="EPAM company logo" width="30" />
+                  <img src="./icons/epam.svg" alt="EPAM Systems logo" width="30" />
                   <h3 class="activity__title">Front End Lab at EPAM University</h3>
                   <span class="activity__label">
                     <time datetime="2022-04-01">Apr, 2022</time> -
@@ -1101,7 +1098,12 @@
                     </li>
                   </ul>
                   <p class="activity__row">Certificates</p>
-                  <button type="button" class="link activity__link" data-preview-open>
+                  <button
+                    type="button"
+                    class="link activity__link"
+                    data-preview-open
+                    data-certification-unit="EPAM University"
+                  >
                     View Certificates (5)
                   </button>
                   <p class="activity__row">Technologies</p>
@@ -1120,14 +1122,38 @@
                   <h3 class="activity__title">Full Stack Development Apprenticeship at GoIT</h3>
                   <span class="activity__label">
                     <time datetime="2022-03-01">Mar, 2022</time> -
-                    <time datetime="2023-01-01">Jan, 2023</time>
+                    <time datetime="2023-02-01">Feb, 2023</time>
                   </span>
                 </div>
                 <div class="activity__description">
                   <p class="activity__row">Programs</p>
                   <p>Full Stack Development Course</p>
+                  <p class="activity__row">Units</p>
+                  <ul class="activity__feature-list">
+                    <li class="activity__feature-item">
+                      <p>HTML+CSS</p>
+                    </li>
+                    <li class="activity__feature-item">
+                      <p>JavaScript</p>
+                    </li>
+                    <li class="activity__feature-item">
+                      <p>React</p>
+                    </li>
+
+                    <li class="activity__feature-item">
+                      <p>Node.js</p>
+                    </li>
+                    <li class="activity__feature-item">
+                      <p>React Native</p>
+                    </li>
+                  </ul>
                   <p class="activity__row">Certificates</p>
-                  <button class="link activity__link" data-preview-open>
+                  <button
+                    type="button"
+                    class="link activity__link"
+                    data-preview-open
+                    data-certification-unit="GoIT"
+                  >
                     View Certificates (1)
                   </button>
                   <p class="activity__row">Technologies</p>
@@ -1257,7 +1283,7 @@
       <img class="scroll-up__icon" src="icons/scroll-up.svg" alt="Scroll up button" />
     </a>
 
-    <div class="backdrop backdrop--hidden" data-preview data-preview-close>
+    <div class="preview preview--hidden" data-preview data-preview-close>
       <div
         id="carousel"
         class="carousel slide"
@@ -1265,50 +1291,8 @@
         data-interval="false"
         data-keyboard="true"
       >
-        <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-          <li data-target="#carousel" data-slide-to="3"></li>
-          <li data-target="#carousel" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel__item-wrapper carousel-inner">
-          <div class="carousel__item carousel-item active">
-            <img
-              class="carousel__image d-block"
-              src="./assets/Kristina-Salnyk-IT-Fundamentals.jpg"
-              alt="IT Fundamentals Certificate"
-            />
-          </div>
-          <div class="carousel__item carousel-item">
-            <img
-              class="carousel__image d-block"
-              src="./assets/Kristina-Salnyk-Type-Script.jpg"
-              alt="TypeScript In-Depth Certificate"
-            />
-          </div>
-          <div class="carousel__item carousel-item">
-            <img
-              class="carousel__image d-block"
-              src="assets/Kristina-Salnyk-Front-End-Beginner.jpg"
-              alt="Front End Beginner Certificate"
-            />
-          </div>
-          <div class="carousel__item carousel-item">
-            <img
-              class="carousel__image d-block"
-              src="assets/Kristina-Salnyk-Front-End-Intermediate.jpg"
-              alt="Front End Intermediate Certificate"
-            />
-          </div>
-          <div class="carousel__item carousel-item">
-            <img
-              class="carousel__image d-block"
-              src="assets/Kristina-Salnyk-Project-Competition.jpg"
-              alt="EPAM Global Project Education Competition Certificate"
-            />
-          </div>
-        </div>
+        <ol class="carousel-indicators" data-preview-indicators></ol>
+        <div class="carousel__inner carousel-inner" data-preview-inner></div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
