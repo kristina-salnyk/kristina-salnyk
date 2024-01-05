@@ -1,0 +1,11 @@
+.footer {
+  background-color: getBgrColor('footer');
+}
+
+.footer__copy-right {
+  @include setYPadding(16px);
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+  color: getTextColor('primary');
+}

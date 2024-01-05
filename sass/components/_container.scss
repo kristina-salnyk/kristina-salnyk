@@ -1,5 +1,5 @@
 .container {
-  @include setXPadding(15px);
+  @include setXPadding(16px);
   @extend %x-margin-centered;
 
   @include setForMobile {

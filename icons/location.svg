@@ -1,0 +1,12 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="mail">
+    <path fill="url(#paint0_linear_14_61)"
+          d="M12,2C8.1,2,5,5.1,5,9c0,6,7,13,7,13s7-7.1,7-13C19,5.1,15.9,2,12,2z M12,11.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5 s2.5,1.1,2.5,2.5S13.4,11.5,12,11.5z"/>
+    <defs>
+        <linearGradient id="paint0_linear_14_61" x1="18.8722" y1="0" x2="18.8722" y2="42"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FDFDFD"/>
+            <stop offset="1" stop-color="white" stop-opacity="0.18"/>
+        </linearGradient>
+    </defs>
+</svg>
+

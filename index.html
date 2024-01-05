@@ -66,48 +66,50 @@
     </header>
     <main>
       <section id="home" class="section hero">
-        <div class="container hero__container">
-          <div>
-            <p class="hero__text">Hello, I'm</p>
-            <h1 class="hero__title">Kristina Salnyk</h1>
-            <h2 class="hero__subtitle">Full Stack Developer</h2>
-            <ul class="hero__button-list">
-              <li>
-                <a class="button button--primary" href="#contact">Get In Touch</a>
-              </li>
-              <li>
-                <a class="button" href="assets/Kristina-Salnyk-Full-Stack-Developer.pdf" download>
-                  Download CV
-                </a>
-              </li>
-            </ul>
-            <h3 class="section__list-title">Experience with</h3>
-            <ul class="hero__icon-list">
-              <li>
-                <img class="hero__icon" src="icons/html.svg" alt="HTML" width="36" />
-              </li>
-              <li>
-                <img class="hero__icon" src="icons/css.svg" alt="CSS" width="36" />
-              </li>
-              <li>
-                <img class="hero__icon" src="icons/js.svg" alt="JS" width="36" />
-              </li>
-              <li>
-                <img class="hero__icon" src="icons/reactjs.svg" alt="React" width="36" />
-              </li>
-              <li>
-                <img class="hero__icon" src="icons/nodejs.svg" alt="Node" width="36" />
-              </li>
-            </ul>
-          </div>
-          <div class="hero__picture-wrapper">
-            <img
-              class="hero__picture"
-              src="images/profile-picture.jpg"
-              alt="Profile picture"
-              width="250"
-              height="250"
-            />
+        <div class="container">
+          <div class="section__columns">
+            <div>
+              <p class="hero__text">Hello, I'm</p>
+              <h1 class="hero__title">Kristina Salnyk</h1>
+              <h2 class="section__accent-title">Full Stack Developer</h2>
+              <ul class="hero__button-list">
+                <li>
+                  <a class="button button--primary" href="#contact">Get In Touch</a>
+                </li>
+                <li>
+                  <a class="button" href="assets/Kristina-Salnyk-Full-Stack-Developer.pdf" download>
+                    Download CV
+                  </a>
+                </li>
+              </ul>
+              <h3 class="section__subtitle hero__subtitle">Experience with</h3>
+              <ul class="hero__icon-list">
+                <li>
+                  <img class="hero__icon" src="icons/html.svg" alt="HTML" width="36" />
+                </li>
+                <li>
+                  <img class="hero__icon" src="icons/css.svg" alt="CSS" width="36" />
+                </li>
+                <li>
+                  <img class="hero__icon" src="icons/js.svg" alt="JS" width="36" />
+                </li>
+                <li>
+                  <img class="hero__icon" src="icons/reactjs.svg" alt="React" width="36" />
+                </li>
+                <li>
+                  <img class="hero__icon" src="icons/nodejs.svg" alt="Node" width="36" />
+                </li>
+              </ul>
+            </div>
+            <div class="hero__picture-wrapper">
+              <img
+                class="hero__picture"
+                src="images/profile-picture.jpg"
+                alt="Profile picture"
+                width="250"
+                height="250"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -124,7 +126,6 @@
             excellent communication and open to any suggestions in this direction 📨
           </p>
           <h3 class="section__subtitle">My Tech Stack</h3>
-          <p class="section__text">Technologies I’ve been working with recently</p>
           <div class="section__columns">
             <ul class="about__feature-list">
               <li class="about__feature-item">
@@ -876,7 +877,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section__title section__title--pink">Experience</h2>
+          <h2 class="section__title section__title--orange">Experience</h2>
           <ul class="section__list">
             <li class="section__list-item">
               <div class="activity">
@@ -1054,7 +1055,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section__title section__title--violet">Education</h2>
+          <h2 class="section__title section__title--blue">Education</h2>
           <ul class="section__list">
             <li class="section__list-item">
               <div class="activity">
@@ -1273,16 +1274,82 @@
               </div>
             </li>
           </ul>
+          <h3 class="section__subtitle">Additional Certificates</h3>
+          <ul class="section__columns">
+            <li>
+              <div
+                data-iframe-width="200"
+                data-iframe-height="240"
+                data-share-badge-id="1b1c8e12-f0df-45b3-be30-23f762d23008"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <script
+                type="text/javascript"
+                defer
+                src="//cdn.credly.com/assets/utilities/embed.js"
+              ></script>
+            </li>
+            <li>
+              <div
+                data-iframe-width="200"
+                data-iframe-height="240"
+                data-share-badge-id="7be829c2-ab14-4a90-9c4c-a5ce98f68552"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <script
+                type="text/javascript"
+                defer
+                src="//cdn.credly.com/assets/utilities/embed.js"
+              ></script>
+            </li>
+          </ul>
         </div>
       </section>
-      <section id="contact" class="section"></section>
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section__title section__title--orange">Contact</h2>
+          <div class="section__columns">
+            <div>
+              <h3 class="section__accent-title">Get in Touch</h3>
+              <p class="section__text">
+                I'm currently looking for new opportunities, my inbox is always open. Whether you
+                have a question or just want to say hi, I'll try my best to get back to you!
+              </p>
+              <ul class="contact__feature-list">
+                <li class="contact__feature-item">
+                  <div class="contact__feature">
+                    <a class="link section__link" href="mailto: kristina.salnyk@gmail.com">
+                      <img src="./icons/location.svg" alt="Location" width="50" />
+                      <span>Poland, Bielsko-Biała</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="contact__feature-item">
+                  <a class="link section__link" href="mailto: kristina.salnyk@gmail.com">
+                    <img src="./icons/mail.svg" alt="Email" />
+                  </a>
+                </li>
+                <li class="contact__feature-item">
+                  <a class="link section__link" href="mailto: kristina.salnyk@gmail.com">
+                    <img src="./icons/mail.svg" alt="Email" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__copy-right">
+          Copyright &copy; 2024 Kristina Salnyk. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
     <a class="scroll-up" href="#home" data-scroll-up>
-      <img class="scroll-up__icon" src="icons/scroll-up.svg" alt="Scroll up button" />
+      <img class="scroll-up__icon" src="icons/scroll-up.svg" alt="Scroll up" />
     </a>
-
     <div class="preview preview--hidden" data-preview data-preview-close>
       <div
         id="carousel"

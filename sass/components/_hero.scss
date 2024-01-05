@@ -1,12 +1,5 @@
 .hero {
-  padding-top: 168px;
-  padding-bottom: 96px;
-}
-
-.hero__container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include setYPadding(96px);
 }
 
 .hero__text {
@@ -21,15 +14,11 @@
 }
 
 .hero__subtitle {
-  font-size: 24px;
-  font-weight: 700;
-  background: getGradientColor('primary');
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  color: getTextColor('secondary');
 }
 
 .hero__button-list {
-  @include setYMargin(56px);
   display: flex;
   gap: 16px;
 }
@@ -37,7 +26,7 @@
 .hero__icon-list {
   display: flex;
   justify-content: center;
-  gap: 36px;
+  gap: 32px;
 }
 
 .hero__icon {
