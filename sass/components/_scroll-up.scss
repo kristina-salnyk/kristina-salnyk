@@ -8,6 +8,7 @@
   z-index: 1;
   cursor: pointer;
   animation: spin 2.5s infinite linear;
+  transition: opacity 250ms $transition-timing-function;
 
   &:hover,
   &:focus {

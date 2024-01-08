@@ -1,0 +1,42 @@
+.contact__blocks {
+  margin-top: 32px;
+}
+
+.contact__feature-list {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.contact__feature {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.contact__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__subtitle {
+  margin-top: 0;
+  margin-bottom: 4px;
+  text-align: start;
+}
+
+.contact__link {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

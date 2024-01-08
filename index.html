@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Kristina Salnyk</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,20 +44,26 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header id="home" class="header">
       <div class="container">
         <nav class="nav">
           <a class="logo" href="./index.html">
-            <img src="icons/logo.png" alt="Logo of the website" width="86" />
+            <img
+              class="logo__image"
+              srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+              src="./images/logo.png"
+              alt="Portfolio logo"
+              width="86"
+            />
           </a>
           <ul class="nav__list">
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="#about">About</a>
             </li>
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="#projects">Projects</a>
             </li>
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -65,13 +71,13 @@
       </div>
     </header>
     <main>
-      <section id="home" class="section hero">
+      <section class="section hero">
         <div class="container">
-          <div class="section__columns">
+          <div class="section__blocks">
             <div>
               <p class="hero__text">Hello, I'm</p>
               <h1 class="hero__title">Kristina Salnyk</h1>
-              <h2 class="section__accent-title">Full Stack Developer</h2>
+              <h2 class="section__accent">Full Stack Developer</h2>
               <ul class="hero__button-list">
                 <li>
                   <a class="button button--primary" href="#contact">Get In Touch</a>
@@ -85,19 +91,29 @@
               <h3 class="section__subtitle hero__subtitle">Experience with</h3>
               <ul class="hero__icon-list">
                 <li>
-                  <img class="hero__icon" src="icons/html.svg" alt="HTML" width="36" />
+                  <svg class="hero__icon" width="40" height="40">
+                    <use href="#html" />
+                  </svg>
                 </li>
                 <li>
-                  <img class="hero__icon" src="icons/css.svg" alt="CSS" width="36" />
+                  <svg class="hero__icon" width="40" height="40">
+                    <use href="#css" />
+                  </svg>
                 </li>
                 <li>
-                  <img class="hero__icon" src="icons/js.svg" alt="JS" width="36" />
+                  <svg class="hero__icon" width="40" height="40">
+                    <use href="#js" />
+                  </svg>
                 </li>
                 <li>
-                  <img class="hero__icon" src="icons/reactjs.svg" alt="React" width="36" />
+                  <svg class="hero__icon" width="40" height="40">
+                    <use href="#react" />
+                  </svg>
                 </li>
                 <li>
-                  <img class="hero__icon" src="icons/nodejs.svg" alt="Node" width="36" />
+                  <svg class="hero__icon" width="40" height="40">
+                    <use href="#node" />
+                  </svg>
                 </li>
               </ul>
             </div>
@@ -126,71 +142,94 @@
             excellent communication and open to any suggestions in this direction 📨
           </p>
           <h3 class="section__subtitle">My Tech Stack</h3>
-          <div class="section__columns">
+          <p class="section__text">Technologies I've been working with recently</p>
+          <div class="section__blocks">
             <ul class="about__feature-list">
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/html-5.svg" alt="HTML5" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#html" />
+                  </svg>
                   <span>HTML5</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/css-3.svg" alt="CSS3" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#css" />
+                  </svg>
                   <span>CSS3</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/java-script.svg" alt="JavaScript" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#js" />
+                  </svg>
                   <span>JavaScript</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/type-script.svg" alt="TypeScript" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#ts" />
+                  </svg>
                   <span>TypeScript</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/react.svg" alt="React, React Native" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#react" />
+                  </svg>
                   <span>React, React Native</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/redux.svg" alt="Redux, Redux Toolkit" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#redux" />
+                  </svg>
                   <span>Redux, Redux Toolkit</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/sass.svg" alt="SASS" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#sass" />
+                  </svg>
                   <span>SASS</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/less.svg" alt="LESS" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#less" />
+                  </svg>
                   <span>LESS</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/bootstrap.svg" alt="Bootstrap" width="24" />
+                  <svg width="24" height="24">
+                    <use href="#bootstrap" />
+                  </svg>
                   <span>Bootstrap</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/material-ui.svg" alt="Material UI" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#material-ui" />
+                  </svg>
                   <span>Material UI</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/styled-components.svg" alt="Styled Components" width="24" />
+                  <svg width="24" height="24">
+                    <use href="#styled-components" />
+                  </svg>
                   <span>Styled Components</span>
                 </div>
               </li>
@@ -198,61 +237,81 @@
             <ul class="about__feature-list">
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/node.svg" alt="NodeJS" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#node" />
+                  </svg>
                   <span>NodeJS</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/express.svg" alt="Express" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#express" />
+                  </svg>
                   <span>Express</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/swagger.svg" alt="Swagger" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#swagger" />
+                  </svg>
                   <span>Swagger</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/mongoose.svg" alt="Mongoose" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#mongoose" />
+                  </svg>
                   <span>Mongoose</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/mongo-db.svg" alt="MongoDB" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#mongo-db" />
+                  </svg>
                   <span>MongoDB</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/firebase.svg" alt="Firebase" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#firebase" />
+                  </svg>
                   <span>Firebase</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/my-sql.svg" alt="MySQL" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#my-sql" />
+                  </svg>
                   <span>MySQL</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/aws.svg" alt="AWS" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#aws" />
+                  </svg>
                   <span>AWS</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/jest.svg" alt="Jest" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#jest" />
+                  </svg>
                   <span>Jest</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/сucumber.svg" alt="Cucumber" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#cucumber" />
+                  </svg>
                   <span>Cucumber</span>
                 </div>
               </li>
@@ -260,67 +319,89 @@
             <ul class="about__feature-list">
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/git.svg" alt="Git" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#git" />
+                  </svg>
                   <span>Git</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/jira.svg" alt="Jira" width="24" />
+                  <svg width="24" height="24">
+                    <use href="#jira" />
+                  </svg>
                   <span>Jira</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/npm.svg" alt="npm" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#npm" />
+                  </svg>
                   <span>npm</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/webpack.svg" alt="Webpack" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#webpack" />
+                  </svg>
                   <span>Webpack</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/es-lint.svg" alt="ESLint" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#es-lint" />
+                  </svg>
                   <span>ESLint</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/figma.svg" alt="Figma" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#figma" />
+                  </svg>
                   <span>Figma</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/postman.svg" alt="Postman" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#postman" />
+                  </svg>
                   <span>Postman</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/docker.svg" alt="Docker" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#docker" />
+                  </svg>
                   <span>Docker</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/web-storm.svg" alt="WebStorm" width="24" />
+                  <svg width="24" height="24">
+                    <use href="#web-storm" />
+                  </svg>
                   <span>WebStorm</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/x-code.svg" alt="XCode" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#x-code" />
+                  </svg>
                   <span>XCode</span>
                 </div>
               </li>
               <li class="about__feature-item">
                 <div class="about__feature">
-                  <img src="icons/android-studio.svg" alt="Android Studio" width="24" />
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#android-studio" />
+                  </svg>
                   <span>Android Studio</span>
                 </div>
               </li>
@@ -372,13 +453,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -426,13 +511,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -480,13 +569,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -534,13 +627,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -588,13 +685,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -642,13 +743,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -696,13 +801,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -750,13 +859,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -804,13 +917,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -858,13 +975,17 @@
                   <ul class="project__link-list">
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/preview.svg" alt="Live preview" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#preview" />
+                        </svg>
                         Live Preview
                       </a>
                     </li>
                     <li>
                       <a class="link project__link" href="#">
-                        <img src="./icons/git-hub.svg" alt="Code" />
+                        <svg width="18" height="18">
+                          <use href="./images/sprite.svg#code" />
+                        </svg>
                         View Code
                       </a>
                     </li>
@@ -1053,7 +1174,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section education">
         <div class="container">
           <h2 class="section__title section__title--blue">Education</h2>
           <ul class="section__list">
@@ -1275,7 +1396,7 @@
             </li>
           </ul>
           <h3 class="section__subtitle">Additional Certificates</h3>
-          <ul class="section__columns">
+          <ul class="section__blocks">
             <li>
               <div
                 data-iframe-width="200"
@@ -1308,34 +1429,74 @@
       <section id="contact" class="section contact">
         <div class="container">
           <h2 class="section__title section__title--orange">Contact</h2>
-          <div class="section__columns">
+          <p class="section__text">
+            I'm currently looking for new opportunities, my inbox is always open. Whether you have a
+            question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          <div class="section__blocks contact__blocks">
             <div>
-              <h3 class="section__accent-title">Get in Touch</h3>
-              <p class="section__text">
-                I'm currently looking for new opportunities, my inbox is always open. Whether you
-                have a question or just want to say hi, I'll try my best to get back to you!
-              </p>
-              <ul class="contact__feature-list">
-                <li class="contact__feature-item">
-                  <div class="contact__feature">
-                    <a class="link section__link" href="mailto: kristina.salnyk@gmail.com">
-                      <img src="./icons/location.svg" alt="Location" width="50" />
-                      <span>Poland, Bielsko-Biała</span>
-                    </a>
-                  </div>
-                </li>
-                <li class="contact__feature-item">
-                  <a class="link section__link" href="mailto: kristina.salnyk@gmail.com">
-                    <img src="./icons/mail.svg" alt="Email" />
-                  </a>
-                </li>
-                <li class="contact__feature-item">
-                  <a class="link section__link" href="mailto: kristina.salnyk@gmail.com">
-                    <img src="./icons/mail.svg" alt="Email" />
-                  </a>
-                </li>
-              </ul>
+              <h3 class="section__accent">Get in Touch</h3>
+              <address>
+                <ul class="contact__feature-list">
+                  <li class="contact__feature-item">
+                    <div class="contact__feature">
+                      <svg width="28" height="28">
+                        <use href="#location" />
+                      </svg>
+                      <div class="contact__description">
+                        <span class="section__subtitle contact__subtitle">Location</span>
+                        <a
+                          class="link contact__link"
+                          href="https://maps.app.goo.gl/A7QQu1YpQ58LGjdeA"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span>Poland, Bielsko-Biała</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact__feature-item">
+                    <div class="contact__feature">
+                      <svg width="28" height="28">
+                        <use href="#mail" />
+                      </svg>
+                      <div class="contact__description">
+                        <span class="contact__label">E-mail</span>
+                        <a class="link contact__link" href="mailto:kristina.salnyk@gmail.com">
+                          <span>kristina.salnyk@gmail.com</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact__feature-item">
+                    <div class="contact__feature">
+                      <a class="link contact__link" href="tel: +48576528232">
+                        <svg width="28" height="28">
+                          <use href="#phone" />
+                        </svg>
+                        <span>+48576528232</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </address>
             </div>
+            <form class="contact" name="contact" autocomplete="on" novalidate>
+              <label>
+                Name
+                <input class="contact__field" type="text" name="name" placeholder="Name" />
+              </label>
+              <label>
+                E-mail
+                <input class="contact__field" type="email" name="email" placeholder="E-mail" />
+              </label>
+              <label>
+                Message
+                <textarea class="contact__field" name="message" placeholder="Message"></textarea>
+              </label>
+              <button class="btn subscription__btn" type="submit">Subscribe Subscribe</button>
+            </form>
           </div>
         </div>
       </section>
@@ -1348,7 +1509,9 @@
       </div>
     </footer>
     <a class="scroll-up" href="#home" data-scroll-up>
-      <img class="scroll-up__icon" src="icons/scroll-up.svg" alt="Scroll up" />
+      <svg class="scroll-up__icon" width="60" height="60">
+        <use href="#scroll-up" />
+      </svg>
     </a>
     <div class="preview preview--hidden" data-preview data-preview-close>
       <div
@@ -1376,5 +1539,256 @@
         </a>
       </div>
     </div>
+
+    <!--    Complex SVG icons -->
+    <svg width="0" height="0" style="position: absolute">
+      <defs>
+        <linearGradient id="a" x1="21" x2="21" y1="0" y2="42" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#fdfdfd" />
+          <stop offset="1" stop-color="#fff" stop-opacity=".18" />
+        </linearGradient>
+        <linearGradient id="b" x1="0" x2="0" y1="0" y2="30" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#fdfdfd" />
+          <stop offset="1" stop-color="#fff" stop-opacity=".18" />
+        </linearGradient>
+        <linearGradient id="c" x1="6" x2="-12" y1="-12" y2="12" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#fdfdfd" />
+          <stop offset="1" stop-color="#fff" stop-opacity=".18" />
+        </linearGradient>
+        <linearGradient id="d" x1="0" x2="32" y1="0" y2="32" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#ff8660" />
+          <stop offset="1" stop-color="#9a33ff" />
+        </linearGradient>
+        <linearGradient
+          id="e"
+          x1="76.079"
+          x2="523.48"
+          y1="10.798"
+          y2="365.95"
+          gradientTransform="translate(1.11 14.613) scale(.24566)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stop-color="#9013fe" />
+          <stop offset="1" stop-color="#6610f2" />
+        </linearGradient>
+        <linearGradient
+          id="f"
+          x1="193.51"
+          x2="293.51"
+          y1="109.74"
+          y2="278.87"
+          gradientTransform="translate(0 52)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stop-color="#fff" />
+          <stop offset="1" stop-color="#f1e5fc" />
+        </linearGradient>
+        <filter
+          id="g"
+          width="197"
+          height="249"
+          x="161.9"
+          y="135.46"
+          color-interpolation-filters="sRGB"
+          filterUnits="userSpaceOnUse"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+          <feOffset dy="4" />
+          <feGaussianBlur stdDeviation="8" />
+          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+          <feBlend in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+        <path id="h" d="M0 0h318v318H0z" />
+        <mask id="i" width="318" height="318" x="0" y="0" fill="#fff">
+          <use xlink:href="#a" />
+        </mask>
+        <linearGradient
+          id="j"
+          x1="22.034"
+          x2="17.118"
+          y1="9.773"
+          y2="14.842"
+          gradientTransform="scale(4)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset=".176" stop-color="#0052cc" />
+          <stop offset="1" stop-color="#2684ff" />
+        </linearGradient>
+        <linearGradient
+          id="k"
+          x1="16.641"
+          x2="10.957"
+          y1="15.564"
+          y2="21.094"
+          gradientTransform="scale(4)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset=".176" stop-color="#0052cc" />
+          <stop offset="1" stop-color="#2684ff" />
+        </linearGradient>
+        <linearGradient
+          id="l"
+          x1="38.88"
+          x2="63.72"
+          y1="6.5"
+          y2="95.94"
+          gradientTransform="rotate(.104) scale(1.21905)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset=".28" stop-color="#07c3f2" />
+          <stop offset=".94" stop-color="#087cfa" />
+        </linearGradient>
+        <linearGradient
+          id="m"
+          x1="46.63"
+          x2="88.66"
+          y1="17.85"
+          y2="79.48"
+          gradientTransform="rotate(.104) scale(1.21905)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset=".14" stop-color="#fcf84a" />
+          <stop offset=".37" stop-color="#07c3f2" />
+        </linearGradient>
+        <linearGradient
+          id="n"
+          x1="88.27"
+          x2="93.79"
+          y1="25.47"
+          y2="45.02"
+          gradientTransform="rotate(.104) scale(1.21905)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset=".28" stop-color="#07c3f2" />
+          <stop offset=".94" stop-color="#087cfa" />
+        </linearGradient>
+      </defs>
+      <symbol id="html" viewBox="0 0 38 42">
+        <path
+          fill="url(#a)"
+          d="m.89 0 3.371 37.8L19.386 42l15.165-4.205L37.927 0H.89Zm29.7 12.364H12.85l.423 4.748H30.17l-1.273 14.233-9.51 2.636-9.498-2.636-.648-7.282h4.654l.33 3.702 5.164 1.39.01-.002 5.166-1.394.536-6.01H9.033L7.783 7.727h23.224l-.417 4.636Z"
+        />
+      </symbol>
+      <symbol id="css" viewBox="0 0 38 42">
+        <path
+          fill="url(#a)"
+          d="m.372 0 3.366 37.787L18.851 42l15.153-4.227L37.372 0h-37Zm30.006 8.658-1.122 12.588.004.069-.004.155-.799 8.8-.086.783-9.499 2.625-.008.008-9.48-2.642-.643-7.276h4.647l.33 3.7 5.154 1.396 5.17-1.415.547-6.025H13.781l-.092-1.018-.212-2.386-.11-1.28h11.636l.425-4.688H7.698l-.092-1.019-.21-2.387-.111-1.281h23.204l-.111 1.293Z"
+        />
+      </symbol>
+      <symbol id="js" viewBox="0 0 42 42">
+        <path
+          fill="url(#a)"
+          d="M37.5 0h-33A4.501 4.501 0 0 0 0 4.5v33C0 39.984 2.016 42 4.5 42h33c2.484 0 4.5-2.016 4.5-4.5v-33C42 2.016 39.984 0 37.5 0ZM22.856 32.756c0 4.088-2.4 5.953-5.897 5.953-3.159 0-4.987-1.63-5.925-3.609l3.216-1.94c.619 1.096 1.181 2.024 2.54 2.024 1.294 0 2.12-.506 2.12-2.484V19.284h3.946v13.472Zm9.338 5.953c-3.666 0-6.038-1.743-7.19-4.03l3.215-1.857c.843 1.378 1.95 2.4 3.89 2.4 1.632 0 2.682-.816 2.682-1.95 0-1.35-1.07-1.828-2.878-2.625l-.985-.422c-2.85-1.21-4.734-2.738-4.734-5.953 0-2.963 2.26-5.213 5.775-5.213 2.512 0 4.312.872 5.606 3.16L34.5 24.187c-.675-1.209-1.406-1.687-2.54-1.687-1.154 0-1.885.731-1.885 1.688 0 1.18.731 1.659 2.428 2.4l.984.421c3.357 1.435 5.241 2.907 5.241 6.207 0 3.543-2.794 5.493-6.534 5.493Z"
+        />
+      </symbol>
+      <symbol id="react" viewBox="0 0 48 42">
+        <path
+          fill="url(#a)"
+          d="M24.317 16.873c2.252 0 4.088 1.834 4.088 4.127 0 2.184-1.836 4.04-4.088 4.04-2.251 0-4.087-1.856-4.087-4.04 0-2.293 1.836-4.127 4.087-4.127Zm-10.12 21.596c1.376.83 4.393-.437 7.869-3.712a52.89 52.89 0 0 1-3.301-4.149 49.676 49.676 0 0 1-5.247-.786c-1.114 4.673-.7 7.883.678 8.647Zm1.551-12.534-.634-1.114c-.24.634-.48 1.267-.634 1.878.59.131 1.246.24 1.924.35l-.656-1.114Zm14.297-1.66L31.815 21l-1.77-3.275c-.656-1.158-1.355-2.184-1.99-3.21-1.18-.066-2.426-.066-3.738-.066-1.311 0-2.557 0-3.738.066-.634 1.026-1.333 2.052-1.989 3.21L16.82 21l1.77 3.275c.656 1.158 1.355 2.184 1.99 3.21 1.18.066 2.426.066 3.738.066 1.311 0 2.557 0 3.738-.066.634-1.026 1.333-2.052 1.989-3.21ZM24.317 9.601c-.415.48-.852.983-1.29 1.573h2.58c-.437-.59-.874-1.092-1.29-1.573Zm0 22.797c.416-.48.853-.982 1.29-1.572h-2.58c.438.59.875 1.092 1.29 1.572Zm10.1-28.867c-1.355-.83-4.372.437-7.848 3.712a52.902 52.902 0 0 1 3.301 4.149c1.793.175 3.563.437 5.247.786 1.114-4.673.7-7.883-.7-8.647Zm-1.53 12.534.634 1.114c.24-.634.48-1.267.634-1.878-.59-.131-1.246-.24-1.924-.35l.656 1.114ZM36.057.67c3.213 1.835 3.563 6.66 2.207 12.294 5.553 1.638 9.553 4.346 9.553 8.036 0 3.69-4 6.398-9.553 8.036 1.356 5.633 1.006 10.46-2.207 12.294-3.192 1.834-7.542-.262-11.74-4.258-4.197 3.995-8.547 6.092-11.76 4.258-3.192-1.835-3.542-6.66-2.187-12.294C4.819 27.398.819 24.69.819 21c0-3.69 4-6.398 9.553-8.036C9.014 7.33 9.364 2.504 12.556.67c3.213-1.834 7.563.262 11.76 4.259C28.515.932 32.865-1.164 36.057.67ZM35.423 21a49.112 49.112 0 0 1 1.945 4.935c4.59-1.376 7.17-3.341 7.17-4.935 0-1.594-2.58-3.56-7.17-4.935A49.112 49.112 0 0 1 35.423 21Zm-22.21 0a49.112 49.112 0 0 1-1.946-4.935c-4.59 1.376-7.17 3.341-7.17 4.935 0 1.594 2.58 3.56 7.17 4.935A49.112 49.112 0 0 1 13.212 21Zm19.674 4.935-.656 1.114c.678-.11 1.334-.219 1.924-.35-.153-.611-.394-1.244-.634-1.878l-.634 1.114Zm-6.318 8.822c3.476 3.275 6.493 4.542 7.848 3.712 1.4-.764 1.814-3.974.7-8.647-1.684.35-3.454.611-5.247.786a52.89 52.89 0 0 1-3.3 4.149ZM15.75 16.065l.655-1.114c-.678.11-1.334.219-1.924.35.153.611.394 1.244.634 1.878l.634-1.114Zm6.317-8.822c-3.476-3.275-6.493-4.542-7.87-3.712-1.377.764-1.792 3.974-.678 8.647a49.676 49.676 0 0 1 5.247-.786 52.902 52.902 0 0 1 3.3-4.149Z"
+        />
+      </symbol>
+      <symbol id="node" viewBox="0 0 43 42">
+        <path
+          fill="url(#a)"
+          d="M31.615 39.378c-.156.082-.143.108.007.032a.406.406 0 0 0 .124-.08c0-.027 0-.027-.131.048Zm.315-.171c-.075.062-.075.062.014.02a.325.325 0 0 0 .09-.06c0-.036-.021-.028-.104.04Zm.205-.123c-.075.061-.075.061.014.02a.323.323 0 0 0 .09-.062c0-.033-.022-.027-.104.042Zm.207-.123c-.075.062-.075.062.012.02.048-.026.09-.054.09-.062 0-.032-.022-.026-.102.043Zm.28-.185c-.144.096-.193.158-.062.09.088-.054.237-.172.211-.172-.056.02-.104.056-.15.082ZM20.07.01c-.095.006-.383.032-.635.053C13.466.604 7.882 3.817 4.342 8.767A20.775 20.775 0 0 0 .636 17.94c-.17 1.155-.19 1.496-.19 3.062 0 1.565.02 1.9.19 3.056 1.143 7.89 6.755 14.512 14.362 16.967 1.369.437 2.803.739 4.437.924.636.068 3.383.068 4.018 0 2.824-.315 5.209-1.012 7.569-2.216.362-.183.43-.232.382-.273a446.926 446.926 0 0 1-3.425-4.587l-3.356-4.532-4.203-6.228a545.416 545.416 0 0 0-4.238-6.227c-.015 0-.033 2.768-.041 6.144-.014 5.913-.014 6.153-.09 6.29a.75.75 0 0 1-.361.377c-.13.061-.247.074-.868.074h-.71l-.185-.115a.78.78 0 0 1-.273-.3l-.09-.186.007-8.23.015-8.232.13-.164a.989.989 0 0 1 .3-.245c.172-.083.24-.096.95-.096.834 0 .972.033 1.19.273a790.962 790.962 0 0 1 5.066 7.629c2.728 4.137 6.453 9.782 8.284 12.551l3.33 5.04.163-.11a21.45 21.45 0 0 0 4.312-3.786 20.916 20.916 0 0 0 4.944-10.733c.17-1.155.19-1.498.19-3.062 0-1.566-.02-1.9-.19-3.056C41.112 10.06 35.5 3.437 27.893.981a22.289 22.289 0 0 0-4.368-.915c-.398-.04-3.112-.09-3.453-.054L20.07.01Zm8.593 12.701a.819.819 0 0 1 .416.478c.036.11.042 2.393.036 7.534l-.015 7.381-1.298-1.995-1.306-1.996v-5.36c0-3.473.015-5.421.033-5.517a.88.88 0 0 1 .41-.519c.164-.082.227-.089.876-.089.608 0 .712.007.848.083Z"
+        />
+      </symbol>
+      <symbol id="location" viewBox="0 0 24 24">
+        <path
+          fill="url(#b)"
+          d="M12 2C8.1 2 5 5.1 5 9c0 6 7 13 7 13s7-7.1 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"
+        />
+      </symbol>
+      <symbol id="mail" viewBox=" 0 0 24 24">
+        <path
+          fill="url(#b)"
+          d="M22 8.32V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.69l2 1.09 7.52 4.1A1 1 0 0 0 12 14a1 1 0 0 0 .5-.14L20 9.49Z"
+        />
+        <path
+          fill="url(#b)"
+          d="m22 6-2 1.18-8 4.67L4 7.5 2 6.4V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2Z"
+        />
+      </symbol>
+      <symbol id="phone" viewBox="0 0 24 24">
+        <path
+          fill="url(#c)"
+          d="m16.556 12.906-.455.453s-1.083 1.076-4.038-1.862-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61.09 1.587.808 5 4.812 8.982 4.247 4.222 8.232 4.39 9.861 4.238.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.438-1.787-.309-2.417.317Z"
+        />
+      </symbol>
+      <symbol id="scroll-up" viewBox="0 0 32 32" fill="url(#d)">
+        <path
+          d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16S24.837 0 16 0 0 7.163 0 16zm29 0c0 7.18-5.82 13-13 13S3 23.18 3 16 8.82 3 16 3s13 5.82 13 13z"
+        />
+        <path d="m22.086 20.914 2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z" />
+      </symbol>
+      <symbol id="bootstrap" viewBox="0 0 128 128">
+        <path
+          fill="url(#e)"
+          d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249
+        13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664
+        11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237
+        6.815-5.072 13.098-12.249 13.098h-73.54c-7.177
+        0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563
+        9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
+        />
+        <path
+          fill="url(#f)"
+          d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
+          filter="url(#g)"
+          transform="translate(1.494 2.203) scale(.24566)"
+        />
+      </symbol>
+      <symbol id="styled-components" viewBox="0 0 318 318">
+        <!--        <rect fill="#c5c5c5" width="318" height="318" rx="15.5" />-->
+        <g fill="none" fill-rule="evenodd">
+          <use xlink:href="#h" stroke="#4a4a4a" stroke-width="8" mask="url(#i)" />
+          <path
+            fill="#fff"
+            d="M44.284 229.416c-4.428 0-7.344 2.376-7.344 5.544 0 2.808 1.728 4.68 5.652 5.76 3.564 1.008 4.32 1.512 4.32 3.096 0 1.44-1.332 2.304-3.384 2.304-1.944 0-3.708-.756-5.184-1.872l-2.304 2.592c1.764 1.584 4.32 2.7 7.596 2.7 4.356 0 8.028-2.088 8.028-6.048 0-3.384-2.196-4.968-6.084-6.012-3.24-.9-3.996-1.476-3.996-2.736 0-1.152 1.044-1.908 2.88-1.908 1.692 0 3.204.54 4.788 1.548l1.8-2.7c-1.8-1.404-4.032-2.268-6.768-2.268zm20.412 15.732 1.62 2.952c-1.368.972-3.096 1.44-4.788 1.44-3.744-.036-5.724-2.16-5.724-6.228v-10.044h-2.988v-3.312h2.988v-4.212l4.608-.54v4.752h4.428l-.468 3.312h-3.96v9.936c0 1.872.612 2.628 2.016 2.628.72 0 1.44-.216 2.268-.684zm19.62-15.192-6.192 19.116c-1.44 4.464-4.248 7.344-9.9 7.776l-.468-3.348c3.78-.576 5.004-1.8 6.084-4.5h-1.584l-6.048-19.044h4.896l4.14 15.984 4.32-15.984zm7.308 19.584a7.55 7.55 0 0 0 3.06-.648l-.972-3.24c-.324.108-.648.18-1.08.18-.756 0-1.08-.432-1.08-1.332v-22.68l-4.608.504v22.32c0 3.132 1.764 4.896 4.68 4.896zm21.744-10.512c0 .612-.072 1.368-.108 1.872h-11.952c.324 3.888 2.16 5.148 4.68 5.148 1.692 0 3.096-.54 4.752-1.692l1.908 2.628c-1.872 1.512-4.176 2.556-7.056 2.556-5.904 0-9.072-3.924-9.072-9.936 0-5.796 3.06-10.188 8.46-10.188 5.328 0 8.388 3.6 8.388 9.612zm-4.572-1.116v-.216c0-3.132-1.116-5.004-3.708-5.004-2.16 0-3.528 1.44-3.78 5.22zm20.124-16.092 4.608.504V249h-4.068l-.324-2.412c-1.152 1.728-2.988 2.952-5.436 2.952-4.752 0-7.236-3.996-7.236-10.044 0-5.868 2.952-10.08 7.668-10.08 2.016 0 3.6.864 4.788 2.052zm-3.924 24.228c1.692 0 2.844-.828 3.924-2.448v-8.712c-1.008-1.224-2.088-2.016-3.636-2.016-2.376 0-3.96 2.016-3.96 6.588 0 4.896 1.404 6.588 3.672 6.588zM44.44 265.416c-5.472 0-8.892 4.14-8.892 10.224s3.42 9.9 8.928 9.9c2.448 0 4.428-.792 6.156-2.196l-2.052-2.916c-1.404.9-2.412 1.368-3.852 1.368-2.592 0-4.284-1.62-4.284-6.228 0-4.572 1.62-6.516 4.284-6.516 1.44 0 2.592.432 3.852 1.368l2.052-2.772c-1.8-1.548-3.708-2.232-6.192-2.232zm17.316 0c5.616 0 8.928 3.816 8.928 10.044 0 6.012-3.348 10.08-8.964 10.08s-8.964-3.816-8.964-10.08c0-5.976 3.348-10.044 9-10.044zm0 3.492c-2.7 0-4.14 2.052-4.14 6.552 0 4.572 1.404 6.588 4.104 6.588s4.104-2.052 4.104-6.588-1.404-6.552-4.068-6.552zm33.444-3.492c-2.52 0-4.284 1.224-5.724 3.204-.72-2.016-2.376-3.204-4.608-3.204-2.412 0-4.14 1.116-5.508 3.024l-.36-2.484h-3.996V285h4.608v-13.248c1.044-1.764 2.016-2.88 3.636-2.88 1.116 0 2.088.684 2.088 3.06V285h4.608v-13.248c1.044-1.764 2.016-2.88 3.6-2.88 1.152 0 2.088.684 2.088 3.06V285h4.608v-13.788c0-3.6-2.016-5.796-5.04-5.796zm20.268 0c4.968 0 7.056 3.924 7.056 10.008 0 5.832-2.7 10.116-7.524 10.116-1.944 0-3.6-.684-4.788-2.088v8.892l-4.608.504v-26.892h4.032l.252 2.34c1.512-1.98 3.528-2.88 5.58-2.88zm-1.764 16.596c2.52 0 3.996-1.944 3.996-6.552 0-4.824-1.296-6.588-3.6-6.588-1.62 0-2.988 1.116-3.888 2.592v8.568c.9 1.332 2.052 1.98 3.492 1.98zm21.132-16.596c5.616 0 8.928 3.816 8.928 10.044 0 6.012-3.348 10.08-8.964 10.08s-8.964-3.816-8.964-10.08c0-5.976 3.348-10.044 9-10.044zm0 3.492c-2.7 0-4.14 2.052-4.14 6.552 0 4.572 1.404 6.588 4.104 6.588s4.104-2.052 4.104-6.588-1.404-6.552-4.068-6.552zm23.4-3.492c-2.412 0-4.32 1.116-5.796 3.024l-.36-2.484h-3.996V285h4.608v-13.248c1.116-1.764 2.34-2.88 3.996-2.88 1.44 0 2.34.684 2.34 3.06V285h4.608v-13.788c0-3.636-1.98-5.796-5.4-5.796zm26.388 9.612c0 .612-.072 1.368-.108 1.872h-11.952c.324 3.888 2.16 5.148 4.68 5.148 1.692 0 3.096-.54 4.752-1.692l1.908 2.628c-1.872 1.512-4.176 2.556-7.056 2.556-5.904 0-9.072-3.924-9.072-9.936 0-5.796 3.06-10.188 8.46-10.188 5.328 0 8.388 3.6 8.388 9.612zm-4.572-1.116v-.216c0-3.132-1.116-5.004-3.708-5.004-2.16 0-3.528 1.44-3.78 5.22zm18.864-8.496c-2.412 0-4.32 1.116-5.796 3.024l-.36-2.484h-3.996V285h4.608v-13.248c1.116-1.764 2.34-2.88 3.996-2.88 1.44 0 2.34.684 2.34 3.06V285h4.608v-13.788c0-3.636-1.98-5.796-5.4-5.796zm20.052 15.732c-.828.468-1.548.684-2.268.684-1.404 0-2.016-.756-2.016-2.628v-9.936h3.96l.468-3.312h-4.428v-4.752l-4.608.54v4.212h-2.988v3.312h2.988v10.044c0 4.068 1.98 6.192 5.724 6.228 1.692 0 3.42-.468 4.788-1.44zm10.224-15.732c-4.428 0-7.344 2.376-7.344 5.544 0 2.808 1.728 4.68 5.652 5.76 3.564 1.008 4.32 1.512 4.32 3.096 0 1.44-1.332 2.304-3.384 2.304-1.944 0-3.708-.756-5.184-1.872l-2.304 2.592c1.764 1.584 4.32 2.7 7.596 2.7 4.356 0 8.028-2.088 8.028-6.048 0-3.384-2.196-4.968-6.084-6.012-3.24-.9-3.996-1.476-3.996-2.736 0-1.152 1.044-1.908 2.88-1.908 1.692 0 3.204.54 4.788 1.548l1.8-2.7c-1.8-1.404-4.032-2.268-6.768-2.268zM79.8 87.2l-36.2 22.5 36.2 22.9-3.7 4.6-37.7-23.6v-7.9l38.1-23.6m189.3 22.7v7.8l-37.7 23.6-3.7-4.9 36.1-22.6L224.4 86l3.2-4.9"
+          />
+          <text
+            fill="#000"
+            font-family="AppleColorEmoji, Apple Color Emoji"
+            font-size="100"
+            letter-spacing=".5"
+            transform="translate(38 44)"
+          >
+            <tspan x="70" y="100">💅</tspan>
+          </text>
+        </g>
+      </symbol>
+      <symbol id="jira" viewBox="0 0 128 128">
+        <path
+          fill="#2684ff"
+          d="M108.023 16H61.805c0 11.52 9.324 20.848 20.847 20.848h8.5v8.226c0 11.52 9.328 20.848 20.848 20.848V19.977A3.98 3.98 0 0 0 108.023 16zm0 0"
+        />
+        <path
+          fill="url(#j)"
+          d="M85.121 39.04H38.902c0 11.519 9.325 20.847 20.844 20.847h8.504v8.226c0 11.52 9.328 20.848 20.848 20.848V43.016a3.983 3.983 0 0 0-3.977-3.977zm0 0"
+        />
+        <path
+          fill="url(#k)"
+          d="M62.219 62.078H16c0 11.524 9.324 20.848 20.848 20.848h8.5v8.23c0 11.52 9.328 20.844 20.847 20.844V66.059a3.984 3.984 0 0 0-3.976-3.98zm0 0"
+        />
+      </symbol>
+      <symbol id="web-storm" viewBox="0 0 128 128">
+        <path
+          fill="url(#l)"
+          d="M21.262 111.25 5.484 17.75 34.656 5.645l18.63 11.07 17.066-9.207 35.558 13.656-19.94 101.352Zm0 0"
+        />
+        <path
+          fill="url(#m)"
+          d="M122.516 45.117 107.41 7.813l-27.402-2.33L37.707 46.13 49.09 98.512l21.262 14.91 52.164-30.953-12.801-24.004Zm0 0"
+        />
+        <path fill="url(#n)" d="m99.07 39.559 10.645 18.906 12.8-13.348-9.398-23.234Zm0 0" />
+        <path d="M27.43 27.43h73.14v73.14H27.43Zm0 0" />
+        <path
+          fill="#fff"
+          d="M36.547 86.746h27.43v4.574h-27.43Zm25.965-50.21L58.43 52.538l-4.668-16.004h-4.645L44.434 52.54l-4.07-16.004H33.96l7.84 27.442h5.144L51.43 48.09l4.437 15.887h5.207l7.828-27.442Zm7.535 23.526 3.57-4.277a12.625 12.625 0 0 0 8.219 3.34c2.437 0 3.973-.977 3.973-2.598v-.074c0-1.535-.95-2.316-5.547-3.496-5.547-1.414-9.117-2.953-9.117-8.414v-.086c0-4.984 4.007-8.289 9.628-8.289a15.85 15.85 0 0 1 10.215 3.5l-3.144 4.559a12.877 12.877 0 0 0-7.156-2.707c-2.317 0-3.536 1.062-3.536 2.437v.086c0 1.805 1.22 2.437 5.938 3.66 5.582 1.461 8.73 3.461 8.73 8.262v.074c0 5.461-4.172 8.535-10.11 8.535a17.48 17.48 0 0 1-11.663-4.402"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>

@@ -21,7 +21,7 @@ $gradient-colors: (
   'primary': linear-gradient(90deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 100%),
   'secondary': linear-gradient(114.99deg, rgba(255, 134, 96, 1) 0%, rgba(154, 51, 255, 1) 80%),
   'overlay': linear-gradient(90deg, rgba(255, 134, 96, 0.4) 0%, rgba(154, 51, 255, 0.4) 100%),
-  'orange': linear-gradient(180deg, rgba(255, 134, 96, 1) 0%, rgba(213, 73, 29, 1) 100%),
+  'orange': linear-gradient(180deg, rgb(248, 150, 97) 0%, rgb(238, 77, 18) 100%),
   'blue': linear-gradient(180deg, rgba(91, 173, 255, 1) 0%, rgba(19, 115, 209, 1) 100%),
   'black': linear-gradient(90deg, rgba(1, 1, 1, 0.6) 0%, rgba(1, 1, 1, 0.6) 100%),
 );
@@ -43,8 +43,7 @@ $icon-colors: (
 );
 
 $accent-colors: (
-  'primary': #8000ff,
-  'secondary': #ff8660,
+  'primary': #8f47ff,
 );
 
 $border-colors: (

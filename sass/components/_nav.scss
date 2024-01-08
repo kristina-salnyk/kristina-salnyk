@@ -6,11 +6,8 @@
   display: flex;
 }
 
-.nav__item {
-  position: relative;
-}
-
 .nav__link {
+  position: relative;
   padding: 24px 32px;
   display: inline-block;
   color: getTextColor('primary');
@@ -29,12 +26,12 @@
     transition: width 250ms ease-in-out;
   }
 
-  &:hover::after {
-    width: 100%;
-  }
-
   &:hover,
   &:focus {
     color: getAccentColor('primary');
+
+    &::after {
+      width: 100%;
+    }
   }
 }
