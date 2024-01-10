@@ -39,6 +39,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script defer src="./js/preview-window.js"></script>
     <script defer src="./js/scroll-up.js"></script>
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -52,28 +53,56 @@
               class="logo__image"
               srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
               src="./images/logo.png"
-              alt="Portfolio logo"
+              alt="Logo"
               width="86"
             />
           </a>
-          <ul class="nav__list">
-            <li>
-              <a class="nav__link" href="#about">About</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#projects">Projects</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <div>
+            <ul class="nav__list nav-menu nav-menu--hidden" data-nav-menu>
+              <li>
+                <a class="link nav__link" href="#about" data-nav-link>About</a>
+              </li>
+              <li>
+                <a class="link nav__link" href="#projects" data-nav-link>Projects</a>
+              </li>
+              <li>
+                <a class="link nav__link" href="#contact" data-nav-link>Contact</a>
+              </li>
+            </ul>
+            <button
+              class="icon-button nav-menu__button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              data-mobile-menu
+            >
+              <svg width="40" height="40">
+                <use class="nav-menu__icon nav-menu__icon--open" href="#mobile-menu" />
+                <use class="nav-menu__icon nav-menu__icon--close" href="#close" />
+              </svg>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
     <main>
       <section class="section hero">
         <div class="container">
-          <div class="section__blocks">
+          <div class="section__columns">
+            <div class="hero__picture-wrapper">
+              <img
+                class="hero__picture"
+                srcset="
+                  ./images/profile-picture-150.jpg 150w,
+                  ./images/profile-picture-250.jpg 250w,
+                  ./images/profile-picture-300.jpg 300w,
+                  ./images/profile-picture-500.jpg 500w
+                "
+                sizes="(max-width: 767px) 150px, (min-width: 768px) 250px"
+                src="./images/profile-picture-150.jpg"
+                alt="Profile picture"
+              />
+            </div>
             <div>
               <p class="hero__text">Hello, I'm</p>
               <h1 class="hero__title">Kristina Salnyk</h1>
@@ -117,15 +146,6 @@
                 </li>
               </ul>
             </div>
-            <div class="hero__picture-wrapper">
-              <img
-                class="hero__picture"
-                src="images/profile-picture.jpg"
-                alt="Profile picture"
-                width="250"
-                height="250"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -143,7 +163,7 @@
           </p>
           <h3 class="section__subtitle">My Tech Stack</h3>
           <p class="section__text">Technologies I've been working with recently</p>
-          <div class="section__blocks">
+          <div class="section__columns">
             <ul class="about__feature-list">
               <li class="about__feature-item">
                 <div class="about__feature">
@@ -212,7 +232,7 @@
               <li class="about__feature-item">
                 <div class="about__feature">
                   <svg width="24" height="24">
-                    <use href="#bootstrap" />
+                    <use href="./images/sprite.svg#bootstrap" />
                   </svg>
                   <span>Bootstrap</span>
                 </div>
@@ -328,7 +348,7 @@
               <li class="about__feature-item">
                 <div class="about__feature">
                   <svg width="24" height="24">
-                    <use href="#jira" />
+                    <use href="./images/sprite.svg#jira" />
                   </svg>
                   <span>Jira</span>
                 </div>
@@ -1396,7 +1416,7 @@
             </li>
           </ul>
           <h3 class="section__subtitle">Additional Certificates</h3>
-          <ul class="section__blocks">
+          <ul class="section__columns">
             <li>
               <div
                 data-iframe-width="200"
@@ -1433,7 +1453,7 @@
             I'm currently looking for new opportunities, my inbox is always open. Whether you have a
             question or just want to say hi, I'll try my best to get back to you!
           </p>
-          <div class="section__blocks contact__blocks">
+          <div class="section__columns contact__blocks">
             <div>
               <h3 class="section__accent">Get in Touch</h3>
               <address>
@@ -1555,51 +1575,14 @@
           <stop stop-color="#fdfdfd" />
           <stop offset="1" stop-color="#fff" stop-opacity=".18" />
         </linearGradient>
-        <linearGradient id="d" x1="0" x2="32" y1="0" y2="32" gradientUnits="userSpaceOnUse">
+        <linearGradient id="d" x1="0" x2="180" y1="0" y2="180" gradientUnits="userSpaceOnUse">
           <stop stop-color="#ff8660" />
           <stop offset="1" stop-color="#9a33ff" />
         </linearGradient>
-        <linearGradient
-          id="e"
-          x1="76.079"
-          x2="523.48"
-          y1="10.798"
-          y2="365.95"
-          gradientTransform="translate(1.11 14.613) scale(.24566)"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0" stop-color="#9013fe" />
-          <stop offset="1" stop-color="#6610f2" />
+        <linearGradient id="e" x1="0" x2="18" y1="0" y2="18" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#ff8660" />
+          <stop offset="1" stop-color="#9a33ff" />
         </linearGradient>
-        <linearGradient
-          id="f"
-          x1="193.51"
-          x2="293.51"
-          y1="109.74"
-          y2="278.87"
-          gradientTransform="translate(0 52)"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0" stop-color="#fff" />
-          <stop offset="1" stop-color="#f1e5fc" />
-        </linearGradient>
-        <filter
-          id="g"
-          width="197"
-          height="249"
-          x="161.9"
-          y="135.46"
-          color-interpolation-filters="sRGB"
-          filterUnits="userSpaceOnUse"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-          <feOffset dy="4" />
-          <feGaussianBlur stdDeviation="8" />
-          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-          <feBlend in2="BackgroundImageFix" result="effect1_dropShadow" />
-          <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-        </filter>
         <path id="h" d="M0 0h318v318H0z" />
         <mask id="i" width="318" height="318" x="0" y="0" fill="#fff">
           <use xlink:href="#a" />
@@ -1717,31 +1700,40 @@
           d="m16.556 12.906-.455.453s-1.083 1.076-4.038-1.862-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61.09 1.587.808 5 4.812 8.982 4.247 4.222 8.232 4.39 9.861 4.238.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.438-1.787-.309-2.417.317Z"
         />
       </symbol>
-      <symbol id="scroll-up" viewBox="0 0 32 32" fill="url(#d)">
+      <symbol id="scroll-up" viewBox="0 0 256 256" fill="url(#d)">
         <path
-          d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16S24.837 0 16 0 0 7.163 0 16zm29 0c0 7.18-5.82 13-13 13S3 23.18 3 16 8.82 3 16 3s13 5.82 13 13z"
+          d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.09957,88.09957,0,0,1,128,216Z"
         />
-        <path d="m22.086 20.914 2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z" />
+        <path
+          d="M133.94629,98.64844a7.99954,7.99954,0,0,0-11.89258,0l-36,40a7.99985,7.99985,0,1,0,11.89258,10.70312L128,115.959l30.05371,33.39258a7.99985,7.99985,0,0,0,11.89258-10.70312Z"
+        />
       </symbol>
-      <symbol id="bootstrap" viewBox="0 0 128 128">
+      <symbol id="mobile-menu" viewBox="0 0 24 24">
         <path
-          fill="url(#e)"
-          d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249
-        13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664
-        11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237
-        6.815-5.072 13.098-12.249 13.098h-73.54c-7.177
-        0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563
-        9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
+          stroke="url(#e)"
+          stroke-linecap="round"
+          stroke-width="1.6"
+          d="M4 18h16M4 12h16M4 6h16"
+        />
+      </symbol>
+      <symbol id="close" viewBox="0 0 24 24">
+        <path
+          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
+          fill-opacity=".16"
+          stroke="url(#e)"
+          stroke-width="1.6"
+          stroke-miterlimit="10"
         />
         <path
-          fill="url(#f)"
-          d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
-          filter="url(#g)"
-          transform="translate(1.494 2.203) scale(.24566)"
+          d="m7.757 16.243 8.486-8.486M16.243 16.243 7.757 7.757"
+          stroke="url(#e)"
+          stroke-width="1.6"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+        />
         />
       </symbol>
       <symbol id="styled-components" viewBox="0 0 318 318">
-        <!--        <rect fill="#c5c5c5" width="318" height="318" rx="15.5" />-->
         <g fill="none" fill-rule="evenodd">
           <use xlink:href="#h" stroke="#4a4a4a" stroke-width="8" mask="url(#i)" />
           <path
@@ -1758,20 +1750,6 @@
             <tspan x="70" y="100">💅</tspan>
           </text>
         </g>
-      </symbol>
-      <symbol id="jira" viewBox="0 0 128 128">
-        <path
-          fill="#2684ff"
-          d="M108.023 16H61.805c0 11.52 9.324 20.848 20.847 20.848h8.5v8.226c0 11.52 9.328 20.848 20.848 20.848V19.977A3.98 3.98 0 0 0 108.023 16zm0 0"
-        />
-        <path
-          fill="url(#j)"
-          d="M85.121 39.04H38.902c0 11.519 9.325 20.847 20.844 20.847h8.504v8.226c0 11.52 9.328 20.848 20.848 20.848V43.016a3.983 3.983 0 0 0-3.977-3.977zm0 0"
-        />
-        <path
-          fill="url(#k)"
-          d="M62.219 62.078H16c0 11.524 9.324 20.848 20.848 20.848h8.5v8.23c0 11.52 9.328 20.844 20.847 20.844V66.059a3.984 3.984 0 0 0-3.976-3.98zm0 0"
-        />
       </symbol>
       <symbol id="web-storm" viewBox="0 0 128 128">
         <path

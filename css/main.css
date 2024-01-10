@@ -250,7 +250,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  body.preview-opened {
+  body.preview-opened,
+  body.mobile-menu-opened {
     position: relative;
     height: 100%;
     width: 100%;
@@ -345,8 +346,52 @@ svg {
   }
 }
 
-.header {
-  background-color: #222222;
+.link {
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover, .link:focus {
+  text-decoration: none;
+  color: #8f47ff;
+  cursor: pointer;
+}
+
+.button {
+  padding: 12px 24px;
+  display: inline-block;
+  min-width: 150px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .button:focus {
+  color: #8f47ff;
+  border-color: #8f47ff;
+}
+
+.button--primary {
+  color: #000;
+  background-color: #fff;
+}
+
+.icon-button {
+  padding: 12px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-button:hover, .icon-button:focus {
+  outline: none;
+  opacity: 0.6;
 }
 
 .section {
@@ -393,12 +438,18 @@ svg {
   text-align: center;
 }
 
-.section__blocks {
+.section__columns {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .section__columns {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 .section__gallery {
@@ -410,6 +461,11 @@ svg {
 
 .section__list-item:not(:last-child) {
   margin-bottom: 64px;
+}
+
+.header {
+  position: relative;
+  background-color: #222222;
 }
 
 .footer {
@@ -468,9 +524,15 @@ svg {
 
 .hero__picture-wrapper {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .hero__picture-wrapper {
+    width: 250px;
+    height: 250px;
+  }
 }
 .hero__picture-wrapper::before {
   content: "";
@@ -512,7 +574,7 @@ svg {
   position: relative;
   padding: 24px 32px;
   display: inline-block;
-  color: #fff;
+  color: inherit;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__link::after {
@@ -534,49 +596,55 @@ svg {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 100%);
+    text-align: center;
+    background-color: #222222;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-menu--hidden {
+    display: none;
+  }
+}
+
+.nav-menu__icon--open {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu__icon--close {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu__button {
+    display: none;
+  }
+}
+.nav-menu__button[aria-expanded=true] .nav-menu__icon--open {
+  position: absolute;
+  opacity: 0;
+}
+.nav-menu__button[aria-expanded=true] .nav-menu__icon--close {
+  position: static;
+  opacity: 1;
+}
+
 .logo {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo:hover, .logo:focus {
   opacity: 0.6;
-}
-
-.button {
-  padding: 12px 24px;
-  display: inline-block;
-  min-width: 150px;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button:hover, .button:focus {
-  text-decoration: none;
-  color: #8f47ff;
-  border-color: #8f47ff;
-}
-
-.button--primary {
-  color: #000;
-  background-color: #fff;
-}
-
-.link {
-  padding: 0;
-  display: inline-block;
-  font-size: 14px;
-  text-decoration: underline;
-  color: #fff;
-  background-color: transparent;
-  border: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link:hover, .link:focus {
-  text-decoration: underline;
-  color: #8f47ff;
-  cursor: pointer;
 }
 
 .project {

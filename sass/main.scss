@@ -7,15 +7,17 @@
 @import './utils/placeholders';
 
 @import './components/container';
-@import './components/header';
+@import './components/link';
+@import './components/button';
+@import './components/icon-button';
 @import './components/section';
+@import './components/header';
 @import './components/footer';
 @import './components/hero';
 @import './components/about';
 @import './components/nav';
+@import 'components/nav-menu';
 @import './components/logo';
-@import './components/button';
-@import './components/link';
 @import './components/project';
 @import 'components/activity';
 @import './components/contact';

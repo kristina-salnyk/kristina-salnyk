@@ -1,0 +1,13 @@
+.icon-button {
+  padding: 12px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  transition: opacity 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+}

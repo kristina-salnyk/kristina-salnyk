@@ -40,9 +40,14 @@
 
 .hero__picture-wrapper {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+
+  @include setForTabletAndDesktop {
+    width: 250px;
+    height: 250px;
+  }
 
   &::before {
     content: '';

@@ -8,12 +8,11 @@
   border: 2px solid getBorderColor('primary');
   border-radius: 50px;
   transition:
-    border-color 250ms $transition-timing-function,
-    color 250ms $transition-timing-function;
+    color 250ms $transition-timing-function,
+    border-color 250ms $transition-timing-function;
 
   &:hover,
   &:focus {
-    text-decoration: none;
     color: getAccentColor('primary');
     border-color: getAccentColor('primary');
   }

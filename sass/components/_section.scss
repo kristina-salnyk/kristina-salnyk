@@ -43,12 +43,18 @@
   text-align: center;
 }
 
-.section__blocks {
+.section__columns {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   gap: 32px;
+
+  @include setForTabletAndDesktop {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
 }
 
 .section__gallery {

@@ -9,7 +9,8 @@ body {
   background-color: getBgrColor('primary');
 }
 
-body.preview-opened {
+body.preview-opened,
+body.mobile-menu-opened {
   @include setForMobile {
     position: relative;
     height: 100%;
