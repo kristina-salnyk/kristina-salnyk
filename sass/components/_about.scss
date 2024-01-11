@@ -1,6 +1,22 @@
+.about__columns {
+  @extend .section__top-backing;
+
+  @include setForMobile {
+    gap: 0;
+  }
+}
+
 .about__feature-item {
   &:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 4px;
+
+    @include setForTabletAndDesktop {
+      margin-bottom: 16px;
+    }
+  }
+
+  @include setForMobile {
+    min-width: 200px;
   }
 }
 

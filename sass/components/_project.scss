@@ -6,7 +6,8 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 
-  &:hover .project__overlay {
+  &:hover .project__overlay,
+  &:focus .project__overlay {
     transform: translateY(0);
   }
 }
@@ -52,8 +53,12 @@
 }
 
 .project__title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
+
+  @include setForTabletAndDesktop {
+    font-size: 20px;
+  }
 }
 
 .project__feature {
@@ -61,8 +66,7 @@
   display: inline-block;
   font-size: 12px;
   text-align: center;
-  color: getBorderColor('primary');
-  border: 1px solid getBorderColor('primary');
+  border: 1px solid;
   border-radius: 50px;
 }
 
@@ -77,4 +81,23 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-size: 12px;
+  text-decoration: underline;
+
+  @include setForTabletAndDesktop {
+    font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.project__icon--code {
+  fill: currentColor;
+}
+
+.project__icon--preview {
+  stroke: currentColor;
 }

@@ -1,10 +1,25 @@
 .section {
   @extend %x-margin-centered;
-  @include setYPadding(56px);
+  @include setYPadding(32px);
+
+  @include setForTablet {
+    @include setYPadding(56px);
+  }
+
+  @include setForDesktop {
+    @include setYPadding(64px);
+  }
+}
+
+.section__top-backing {
+  margin-top: 16px;
+
+  @include setForTabletAndDesktop {
+    margin-top: 32px;
+  }
 }
 
 .section__accent {
-  display: inline-block;
   font-size: 24px;
   font-weight: 700;
   background: getGradientColor('primary');
@@ -21,20 +36,29 @@
 }
 
 .section__title {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   font-size: 24px;
   font-weight: 700;
   text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @include setForTabletAndDesktop {
+    margin-bottom: 48px;
+  }
 }
 
 .section__subtitle {
-  margin-top: 48px;
-  margin-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 16px;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+
+  @include setForTabletAndDesktop {
+    margin-top: 48px;
+    margin-bottom: 32px;
+  }
 }
 
 .section__text {
@@ -50,18 +74,22 @@
   gap: 32px;
 
   @include setForTabletAndDesktop {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-
   }
 }
 
 .section__gallery {
+  @extend .section__top-backing;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
+  grid-template-columns: 270px;
   justify-content: space-around;
   gap: 32px;
+
+  @include setForTabletAndDesktop {
+    grid-template-columns: repeat(auto-fit, 320px);
+  }
 }
 
 .section__list {
