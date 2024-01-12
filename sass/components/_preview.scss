@@ -1,5 +1,5 @@
 .preview {
-  padding: 96px;
+  padding: 96px 32px;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -9,6 +9,10 @@
   opacity: 1;
   background: getBgrColor('backdrop');
   transition: opacity 250ms $transition-timing-function;
+
+  @include setForTabletAndDesktop {
+    padding: 96px;
+  }
 }
 
 .preview--hidden {

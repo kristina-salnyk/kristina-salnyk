@@ -7,10 +7,6 @@
   @include setForMobile {
     flex-wrap: wrap;
   }
-
-  @include setForTabletAndDesktop {
-    gap: 16px;
-  }
 }
 
 .activity__icon {

@@ -1,14 +1,15 @@
-.contact__blocks {
-  margin-top: 32px;
+.contact__columns {
+  @extend .section__top-backing;
+}
+
+.contact__info {
+  @extend .section__top-backing;
 }
 
 .contact__feature-list {
-  margin-top: 56px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 32px;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .contact__feature {
@@ -17,27 +18,32 @@
   gap: 8px;
   text-decoration: none;
 
+  @include setForTabletAndDesktop {
+    gap: 16px;
+  }
+
   &:hover,
   &:focus {
     text-decoration: none;
   }
 }
 
-.contact__description {
+.contact__content {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
-.contact__subtitle {
-  margin-top: 0;
-  margin-bottom: 4px;
-  text-align: start;
+.contact__heading {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .contact__link {
   text-decoration: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 }
