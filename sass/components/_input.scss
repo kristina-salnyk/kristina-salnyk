@@ -1,0 +1,27 @@
+.input {
+  padding: 12px;
+  color: getTextColor('primary');
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid;
+  transition: border-color 250ms $transition-timing-function;
+
+  @include setForMobile {
+    font-size: 14px;
+  }
+
+  @include setForTabletAndDesktop {
+    padding: 12px;
+    min-width: 150px;
+  }
+
+  &::placeholder {
+    color: getTextColor('placeholder');
+  }
+
+  &:hover,
+  &:focus {
+    border-color: getAccentColor('primary');
+  }
+}

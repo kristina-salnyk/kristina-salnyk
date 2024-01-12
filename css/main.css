@@ -368,6 +368,7 @@ svg {
   font-weight: 500;
   text-align: center;
   color: inherit;
+  background-color: transparent;
   border: 2px solid;
   border-radius: 50px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -386,6 +387,8 @@ svg {
 .button:hover, .button:focus {
   color: #8f47ff;
   border-color: #8f47ff;
+  outline: none;
+  cursor: pointer;
 }
 
 .button--primary {
@@ -403,6 +406,33 @@ svg {
 .icon-button:hover, .icon-button:focus {
   outline: none;
   opacity: 0.6;
+}
+
+.input {
+  padding: 12px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 767px) {
+  .input {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input {
+    padding: 12px;
+    min-width: 150px;
+  }
+}
+.input::placeholder {
+  color: rgba(197, 197, 197, 0.6);
+}
+.input:hover, .input:focus {
+  border-color: #8f47ff;
 }
 
 .section {
@@ -955,7 +985,6 @@ svg {
 }
 
 .contact__heading {
-  font-size: 18px;
   font-weight: 500;
 }
 
@@ -964,6 +993,24 @@ svg {
 }
 .contact__link:hover, .contact__link:focus {
   text-decoration: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.contact-form__field,
+.contact-form__input {
+  width: 100%;
+}
+
+.contact-form__button {
+  align-self: center;
 }
 
 .preview {

@@ -1583,20 +1583,38 @@
                 </ul>
               </address>
             </div>
-            <form class="contact" name="contact" autocomplete="on" novalidate>
-              <label>
-                Name
-                <input class="contact__field" type="text" name="name" placeholder="Name" />
-              </label>
-              <label>
-                E-mail
-                <input class="contact__field" type="email" name="email" placeholder="E-mail" />
-              </label>
-              <label>
-                Message
-                <textarea class="contact__field" name="message" placeholder="Message"></textarea>
-              </label>
-              <button class="btn subscription__btn" type="submit">Subscribe Subscribe</button>
+            <form class="contact-form" name="contact" autocomplete="off">
+              <div class="contact-form__field">
+                <label class="visually-hidden" for="name"> Name</label>
+                <input
+                  id="name"
+                  class="input contact-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="contact-form__field">
+                <label class="visually-hidden" for="email"> E-mail</label>
+                <input
+                  id="email"
+                  class="input contact-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="contact-form__field">
+                <label class="visually-hidden" for="message"> Message</label>
+                <textarea
+                  id="message"
+                  class="input contact-form__input"
+                  name="message"
+                  placeholder="Message"
+                  rows="6"
+                ></textarea>
+              </div>
+              <button class="button" type="submit">Send Message</button>
             </form>
           </div>
         </div>
