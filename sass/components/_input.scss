@@ -1,9 +1,10 @@
 .input {
   padding: 12px;
-  color: getTextColor('primary');
-  background-color: transparent;
+  color: getTextColor('primary') !important;
+  background-color: transparent !important;
   border: none;
   outline: none;
+  border-radius: 0;
   border-bottom: 2px solid;
   transition: border-color 250ms $transition-timing-function;
 
