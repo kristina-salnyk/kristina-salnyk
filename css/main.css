@@ -357,7 +357,7 @@ svg {
 }
 .link:hover, .link:focus {
   text-decoration: none;
-  color: #8f47ff;
+  color: #541cbd;
   cursor: pointer;
 }
 
@@ -385,8 +385,8 @@ svg {
   }
 }
 .button:hover, .button:focus {
-  color: #8f47ff;
-  border-color: #8f47ff;
+  color: #541cbd;
+  border-color: #541cbd;
   outline: none;
   cursor: pointer;
 }
@@ -433,7 +433,7 @@ svg {
   color: rgba(197, 197, 197, 0.6);
 }
 .input:hover, .input:focus {
-  border-color: #8f47ff;
+  border-color: #541cbd;
 }
 
 .section {
@@ -726,7 +726,7 @@ svg {
   transition: width 250ms ease-in-out;
 }
 .nav__link:hover, .nav__link:focus {
-  color: #8f47ff;
+  color: #541cbd;
 }
 .nav__link:hover::after, .nav__link:focus::after {
   width: 100%;
@@ -964,36 +964,38 @@ svg {
   gap: 16px;
 }
 
-.contact__feature {
-  display: flex;
+.contact__link {
+  display: inline-flex;
   align-items: start;
   gap: 8px;
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  .contact__feature {
+  .contact__link {
     gap: 16px;
   }
 }
-.contact__feature:hover, .contact__feature:focus {
-  text-decoration: none;
-}
-
-.contact__content {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.contact__heading {
-  font-weight: 500;
-}
-
-.contact__link {
-  text-decoration: none;
-}
 .contact__link:hover, .contact__link:focus {
   text-decoration: none;
+}
+
+.contact__icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.contact__icon {
+  fill: currentColor;
+}
+
+.contact__subtitle {
+  color: #c5c5c5;
+}
+@media screen and (min-width: 768px) {
+  .contact__subtitle {
+    margin-bottom: 16px;
+  }
 }
 
 .contact-form {

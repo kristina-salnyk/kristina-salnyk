@@ -12,8 +12,8 @@
   gap: 16px;
 }
 
-.contact__feature {
-  display: flex;
+.contact__link {
+  display: inline-flex;
   align-items: start;
   gap: 8px;
   text-decoration: none;
@@ -28,21 +28,20 @@
   }
 }
 
-.contact__content {
+.contact__icon-list {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  justify-content: center;
+  gap: 32px;
 }
 
-.contact__heading {
-  font-weight: 500;
+.contact__icon {
+  fill: currentColor;
 }
 
-.contact__link {
-  text-decoration: none;
+.contact__subtitle {
+  color: getTextColor('secondary');
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
+  @include setForTabletAndDesktop {
+    margin-bottom: 16px;
   }
 }
