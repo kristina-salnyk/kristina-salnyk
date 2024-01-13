@@ -39,6 +39,12 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script defer src="./js/email-service.js"></script>
+    <script defer src="./js/contact-form.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script defer src="./js/preview-window.js"></script>
     <script defer src="./js/scroll-up.js"></script>
@@ -1583,7 +1589,7 @@
                 </ul>
               </address>
             </div>
-            <form class="contact-form" name="contact" autocomplete="off">
+            <form class="contact-form" name="contact" autocomplete="off" data-contact-form>
               <div class="contact-form__field">
                 <label class="visually-hidden" for="name"> Name</label>
                 <input
