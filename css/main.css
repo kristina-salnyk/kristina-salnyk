@@ -357,7 +357,7 @@ svg {
 }
 .link:hover, .link:focus {
   text-decoration: none;
-  color: #541cbd;
+  color: #884aff;
   cursor: pointer;
 }
 
@@ -385,8 +385,8 @@ svg {
   }
 }
 .button:hover, .button:focus {
-  color: #541cbd;
-  border-color: #541cbd;
+  color: #884aff;
+  border-color: #884aff;
   outline: none;
   cursor: pointer;
 }
@@ -433,7 +433,7 @@ svg {
   color: rgba(197, 197, 197, 0.6);
 }
 .input:hover, .input:focus {
-  border-color: #541cbd;
+  border-color: #884aff;
 }
 
 .section {
@@ -580,6 +580,7 @@ svg {
 @media screen and (min-width: 768px) {
   .hero__columns {
     flex-direction: row-reverse;
+    justify-content: space-evenly;
   }
 }
 
@@ -726,7 +727,7 @@ svg {
   transition: width 250ms ease-in-out;
 }
 .nav__link:hover, .nav__link:focus {
-  color: #541cbd;
+  color: #884aff;
 }
 .nav__link:hover::after, .nav__link:focus::after {
   width: 100%;
@@ -816,9 +817,14 @@ svg {
 
 .project__description {
   padding: 16px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 200;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .project__description {
+    font-size: 12px;
+  }
 }
 
 .project__thumb {
@@ -966,7 +972,7 @@ svg {
 
 .contact__link {
   display: inline-flex;
-  align-items: start;
+  align-items: center;
   gap: 8px;
   text-decoration: none;
 }
@@ -978,15 +984,20 @@ svg {
 .contact__link:hover, .contact__link:focus {
   text-decoration: none;
 }
+.contact__link .contact__icon {
+  fill: currentColor;
+}
 
 .contact__icon-list {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
 }
-
-.contact__icon {
-  fill: currentColor;
+.contact__icon-list .contact__icon {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__icon-list .contact__icon:hover {
+  opacity: 0.6;
 }
 
 .contact__subtitle {

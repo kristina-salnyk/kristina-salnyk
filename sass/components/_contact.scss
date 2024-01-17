@@ -14,7 +14,7 @@
 
 .contact__link {
   display: inline-flex;
-  align-items: start;
+  align-items: center;
   gap: 8px;
   text-decoration: none;
 
@@ -26,16 +26,24 @@
   &:focus {
     text-decoration: none;
   }
+
+  .contact__icon {
+    fill: currentColor;
+  }
 }
 
 .contact__icon-list {
   display: flex;
   justify-content: center;
-  gap: 32px;
-}
+  gap: 24px;
 
-.contact__icon {
-  fill: currentColor;
+  .contact__icon {
+    transition: opacity 250ms $transition-timing-function;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }
 
 .contact__subtitle {

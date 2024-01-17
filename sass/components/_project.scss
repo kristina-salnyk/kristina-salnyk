@@ -33,9 +33,13 @@
 
 .project__description {
   padding: 16px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 200;
   text-align: center;
+
+  @include setForTabletAndDesktop {
+    font-size: 12px;
+  }
 }
 
 .project__thumb {

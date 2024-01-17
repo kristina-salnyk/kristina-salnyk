@@ -13,6 +13,7 @@
 .hero__columns {
   @include setForTabletAndDesktop {
     flex-direction: row-reverse;
+    justify-content: space-evenly;
   }
 }
 
