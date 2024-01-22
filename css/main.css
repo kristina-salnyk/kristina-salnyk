@@ -589,12 +589,16 @@ svg {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .hero__picture-wrapper {
     width: 250px;
     height: 250px;
   }
+}
+.hero__picture-wrapper:hover {
+  transform: scale(1.2);
 }
 .hero__picture-wrapper::before {
   content: "";

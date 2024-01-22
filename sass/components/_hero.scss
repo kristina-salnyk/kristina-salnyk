@@ -22,10 +22,15 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  transition: transform 250ms $transition-timing-function;
 
   @include setForTabletAndDesktop {
     width: 250px;
     height: 250px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 
   &::before {
